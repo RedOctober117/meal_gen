@@ -1,10 +1,10 @@
 -- This script creates the meal_gen database. It should include all the relevant data. 
 
-DROP DATABASE IF EXISTS meal_gen
+DROP DATABASE IF EXISTS meal_gen;
 
-CREATE DATABASE IF NOT EXISTS meal_gen
+CREATE DATABASE IF NOT EXISTS meal_gen;
 
-USE meal_gen
+USE meal_gen;
 
 CREATE TABLE servings (
   serv_id         INT          NOT NULL     UNIQUE  AUTO_INCREMENT  PRIMARY KEY,
@@ -24,6 +24,5 @@ CREATE TABLE servings (
   serv_vit_d      INT          DEFAULT 0,
   serv_calc       INT          DEFAULT 0,
   serv_iron       INT          DEFAULT 0,
-  serv_potas      INT          DEFAULT 0,
-  
-)
+  serv_potas      INT          DEFAULT 0
+);
