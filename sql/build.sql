@@ -26,3 +26,20 @@ CREATE TABLE servings (
   serv_iron       INT          DEFAULT 0,
   serv_potas      INT          DEFAULT 0
 );
+
+CREATE TABLE meals (
+  meal_id         INT          NOT NULL     UNIQUE    AUTO_INCREMENT   PRIMARY KEY,
+  meal_name       VARCHAR(50)  NOT NULL     
+);
+
+CREATE TABLE meal_break (
+  meal_break_id   INT   
+);
+
+CREATE TABLE meal_lun (
+  meal_lun_id
+);
+
+CREATE TABLE meal_din (
+  meal_din_id
+)
