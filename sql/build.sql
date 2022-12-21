@@ -7,7 +7,7 @@ CREATE DATABASE IF NOT EXISTS meal_gen;
 USE meal_gen;
 
 CREATE TABLE servings (
-  serv_id         INT          NOT NULL     UNIQUE  AUTO_INCREMENT  PRIMARY KEY,
+  serv_id         INT          NOT NULL     UNIQUE  AUTO_INCREMENT,
   serv_name       VARCHAR(50)  NOT NULL     UNIQUE,
   serv_size       VARCHAR(5)   NOT NULL,
   serv_cal        INT          DEFAULT 0, 
@@ -24,16 +24,22 @@ CREATE TABLE servings (
   serv_vit_d      INT          DEFAULT 0,
   serv_calc       INT          DEFAULT 0,
   serv_iron       INT          DEFAULT 0,
-  serv_potas      INT          DEFAULT 0
+  serv_potas      INT          DEFAULT 0,
+  PRIMARY KEY (serv_id, serv_name)
 );
 
 CREATE TABLE meals (
-  meal_id         INT          NOT NULL     UNIQUE    AUTO_INCREMENT   PRIMARY KEY,
-  meal_name       VARCHAR(50)  NOT NULL     
+  meal_id         INT          NOT NULL     UNIQUE    AUTO_INCREMENT,
+  meal_name       VARCHAR(50)  NOT NULL,
+  PRIMARY KEY (meal_id, meal_name)
 );
 
 CREATE TABLE meal_break (
-  meal_break_id   INT   
+  meal_break_id   INT  NOT NULL  UNIQUE,
+  meal_break_name  VARCHAR(50)  NOT NULL,
+
+  PRIMARY KEY (meal_break_id, meal_break_name),
+  CONSTRAINT FOREIGN KEY (meal_break_id, meal_break_name) REFERENCES meals (meal_id, meal_name) ON DELETE CASCADE
 );
 
 CREATE TABLE meal_lun (
