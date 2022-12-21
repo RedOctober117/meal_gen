@@ -7,9 +7,10 @@ CREATE DATABASE IF NOT EXISTS meal_gen;
 USE meal_gen;
 
 CREATE TABLE default_serving_units (
+  default_serving_unit_id   INT               AUTO_INCREMENT,
   default_serving_type      VARCHAR(50)       NOT NULL    UNIQUE,
   default_serving_unit      VARCHAR(50),
-  PRIMARY KEY (default_serving_type)
+  PRIMARY KEY (default_serving_unit_id)
 );
 
 CREATE TABLE servings (
@@ -59,6 +60,12 @@ CREATE TABLE meal_din (
   meal_din_id
 );
 
+/*
+==============================================
+HERE BEGINS THE INSERTION QUERY SECTION
+==============================================
+*/
+
 INSERT INTO default_serving_units (default_serving_type, default_serving_unit) VALUES
   ("Calories", NULL),
   ("Total Fat", "g"),
@@ -75,7 +82,3 @@ INSERT INTO default_serving_units (default_serving_type, default_serving_unit) V
   ("Calcium", "mg"),
   ("Iron", "mg"),
   ("Potassium", "mg");
-
-
-
-
