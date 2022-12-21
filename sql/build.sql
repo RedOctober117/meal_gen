@@ -31,6 +31,8 @@ CREATE TABLE servings (
 CREATE TABLE meals (
   meal_id         INT          NOT NULL     UNIQUE    AUTO_INCREMENT,
   meal_name       VARCHAR(50)  NOT NULL,
+  meal_ing_1      VARCHAR(50)  DEFAULT 0,
+  meal_ing_1_cnt  
   PRIMARY KEY (meal_id, meal_name)
 );
 
