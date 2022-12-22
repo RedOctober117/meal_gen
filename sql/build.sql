@@ -36,27 +36,35 @@ CREATE TABLE servings (
   PRIMARY KEY (serv_id, serv_name)
 );
 
-CREATE TABLE meals (
-  meal_id         INT          NOT NULL     UNIQUE    AUTO_INCREMENT,
-  meal_name       VARCHAR(50)  NOT NULL,
-  meal_ing_1      VARCHAR(50)  DEFAULT 0,
-  meal_ing_1_cnt  
-  PRIMARY KEY (meal_id, meal_name)
+CREATE TABLE meal_names (
+  meal_id         INT            NOT NULL     UNIQUE       AUTO_INCREMENT,
+  meal_name       VARCHAR(50)    NOT NULL,
+  PRIMARY KEY (meal_id)
 );
 
-CREATE TABLE meal_break (
-  meal_break_id   INT  NOT NULL  UNIQUE,
-  meal_break_name  VARCHAR(50)  NOT NULL,
-
-  PRIMARY KEY (meal_break_id, meal_break_name),
-  CONSTRAINT FOREIGN KEY (meal_break_id, meal_break_name) REFERENCES meals (meal_id, meal_name) ON DELETE CASCADE
+CREATE TABLE meal_compositions (
+  serv_id         INT            NOT NULL,
+  serv_qty        DECIMAL(5,2)   NOT NULL,
+  meal_id         INT            NOT NULL,
+  CONSTRAINT FOREIGN KEY (serv_id) REFERENCES servings (serv_id),
+  CONSTRAINT FOREIGN KEY (meal_id) REFERENCES meal_names (meal_id)
 );
 
-CREATE TABLE meal_lun (
-  meal_lun_id
+CREATE TABLE meal_breakfast (
+  meal_breakfast_id      INT      NOT NULL      UNIQUE      AUTO_INCREMENT,
+  meal_compositions_id   INT      NOT NULL      UNIQUE,
+  PRIMARY KEY (meal_breakfast_id),
+  CONSTRAINT FOREIGN KEY (meal_compositions_id) REFERENCES meal_compositions (meal_id)
+);
+/*
+CREATE TABLE meal_lunch (
+  meal_lun_id     INT           NOT NULL        UNIQUE        AUTO_INCREMENT,
+  meal_id         INT           NOT NULL,
+  PRIMARY KEY (meal_lun_id),
+  CONSTRAINT FOREIGN KEY (meal_id) REFERENCES meal_names (meal_id)
 );
 
-CREATE TABLE meal_din (
+CREATE TABLE meal_dinner (
   meal_din_id
 );
 
