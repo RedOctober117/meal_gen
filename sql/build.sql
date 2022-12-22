@@ -30,7 +30,7 @@ CREATE TABLE servings (
   serv_sugar_add  INT            DEFAULT 0,
   serv_prot       INT            DEFAULT 0,
   serv_vit_d      INT            DEFAULT 0,
-  serv_calc       INT            DEFAULT 0,
+  serv_calcium    INT            DEFAULT 0,
   serv_iron       INT            DEFAULT 0,
   serv_potas      INT            DEFAULT 0,
   PRIMARY KEY (serv_id, serv_name)
