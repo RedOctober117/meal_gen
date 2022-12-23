@@ -54,7 +54,7 @@ CREATE TABLE meal_breakfast (
   meal_breakfast_id      INT      NOT NULL      UNIQUE      AUTO_INCREMENT,
   meal_compositions_id   INT      NOT NULL      UNIQUE,
   PRIMARY KEY (meal_breakfast_id),
-  CONSTRAINT FOREIGN KEY (meal_compositions_id) REFERENCES meal_compositions (meal_id)
+  CONSTRAINT FOREIGN KEY (meal_compositions_id) REFERENCES meal_names (meal_id)
 );
 
 CREATE TABLE meal_lunch (
