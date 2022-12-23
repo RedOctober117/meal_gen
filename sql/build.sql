@@ -43,11 +43,11 @@ CREATE TABLE meal_names (
 );
 
 CREATE TABLE meal_compositions (
-  serv_id         INT            NOT NULL,
-  serv_qty        DECIMAL(5,2)   NOT NULL,
   meal_id         INT            NOT NULL,
-  CONSTRAINT FOREIGN KEY (serv_id) REFERENCES servings (serv_id),
-  CONSTRAINT FOREIGN KEY (meal_id) REFERENCES meal_names (meal_id)
+  serv_qty        DECIMAL(5,2)   NOT NULL,
+  serv_id         INT            NOT NULL,
+  CONSTRAINT FOREIGN KEY (serv_id) REFERENCES servings (serv_id) ON DELETE CASCADE,
+  CONSTRAINT FOREIGN KEY (meal_id) REFERENCES meal_names (meal_id) ON DELETE CASCADE
 );
 
 CREATE TABLE meal_breakfast (
@@ -56,16 +56,19 @@ CREATE TABLE meal_breakfast (
   PRIMARY KEY (meal_breakfast_id),
   CONSTRAINT FOREIGN KEY (meal_compositions_id) REFERENCES meal_compositions (meal_id)
 );
-/*
+
 CREATE TABLE meal_lunch (
-  meal_lun_id     INT           NOT NULL        UNIQUE        AUTO_INCREMENT,
-  meal_id         INT           NOT NULL,
-  PRIMARY KEY (meal_lun_id),
-  CONSTRAINT FOREIGN KEY (meal_id) REFERENCES meal_names (meal_id)
+  meal_lunch_id     INT           NOT NULL        UNIQUE        AUTO_INCREMENT,
+  meal_composition_id         INT           NOT NULL,
+  PRIMARY KEY (meal_lunch_id),
+  CONSTRAINT FOREIGN KEY (meal_composition_id) REFERENCES meal_names (meal_id)
 );
 
 CREATE TABLE meal_dinner (
-  meal_din_id
+  meal_dinner_id    INT     NOT NULL    UNIQUE    AUTO_INCREMENT,
+  meal_composition_id     INT     NOT NULL,
+  PRIMARY KEY (meal_dinner_id),
+  CONSTRAINT FOREIGN KEY (meal_composition_id) REFERENCES meal_names (meal_id)
 );
 
 /*
@@ -90,3 +93,6 @@ INSERT INTO default_serving_units (default_serving_type, default_serving_unit) V
   ("Calcium", "mg"),
   ("Iron", "mg"),
   ("Potassium", "mg");
+
+INSERT INTO meal_names (meal_name) VALUES
+  ("French Toast");
