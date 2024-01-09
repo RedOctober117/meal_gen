@@ -1,0 +1,11 @@
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/dotenvy-59c2b413a45ed91c.rmeta: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/errors.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/find.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/iter.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/parse.rs
+
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/libdotenvy-59c2b413a45ed91c.rlib: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/errors.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/find.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/iter.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/parse.rs
+
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/dotenvy-59c2b413a45ed91c.d: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/errors.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/find.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/iter.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/parse.rs
+
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/lib.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/errors.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/find.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/iter.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/dotenvy-0.15.7/src/parse.rs:

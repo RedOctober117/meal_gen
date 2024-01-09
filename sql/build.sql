@@ -9,12 +9,12 @@ USE meal_gen;
 CREATE TABLE default_serving_units (
   default_serving_unit_id   INT               AUTO_INCREMENT,
   default_serving_type      VARCHAR(50)       NOT NULL    UNIQUE,
-  default_serving_unit      VARCHAR(50),
+  default_serving_unit      VARCHAR(50)       NOT NULL,
   PRIMARY KEY (default_serving_unit_id)
 );
 
 CREATE TABLE servings (
-  serv_id         INT            NOT NULL     UNIQUE      AUTO_INCREMENT,
+  serv_id         INT            AUTO_INCREMENT,
   serv_name       VARCHAR(50)    NOT NULL     UNIQUE,
   serv_size       DECIMAL(5,2)   NOT NULL,
   serv_unit       VARCHAR(50)    NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE servings (
 );
 
 CREATE TABLE meal_names (
-  meal_id         INT            NOT NULL     UNIQUE       AUTO_INCREMENT,
+  meal_id         INT            AUTO_INCREMENT,
   meal_name       VARCHAR(50)    NOT NULL,
   PRIMARY KEY (meal_id)
 );
@@ -51,26 +51,31 @@ CREATE TABLE meal_compositions (
 );
 
 CREATE TABLE meal_breakfast (
-  meal_breakfast_id      INT      NOT NULL      UNIQUE      AUTO_INCREMENT,
+  meal_breakfast_id      INT      AUTO_INCREMENT,
   meal_compositions_id   INT      NOT NULL      UNIQUE,
   PRIMARY KEY (meal_breakfast_id),
   CONSTRAINT FOREIGN KEY (meal_compositions_id) REFERENCES meal_names (meal_id)
 );
 
 CREATE TABLE meal_lunch (
-  meal_lunch_id     INT           NOT NULL        UNIQUE        AUTO_INCREMENT,
+  meal_lunch_id               INT           AUTO_INCREMENT,
   meal_composition_id         INT           NOT NULL,
   PRIMARY KEY (meal_lunch_id),
   CONSTRAINT FOREIGN KEY (meal_composition_id) REFERENCES meal_names (meal_id)
 );
 
 CREATE TABLE meal_dinner (
-  meal_dinner_id    INT     NOT NULL    UNIQUE    AUTO_INCREMENT,
-  meal_composition_id     INT     NOT NULL,
+  meal_dinner_id         INT     AUTO_INCREMENT,
+  meal_composition_id    INT     NOT NULL,
   PRIMARY KEY (meal_dinner_id),
   CONSTRAINT FOREIGN KEY (meal_composition_id) REFERENCES meal_names (meal_id)
 );
 
+CREATE TABLE meal_week_history (
+  meal_week_id    INT   AUTO_INCREMENT,
+  meal_name_id    INT   NOT NULL
+  CONSTRAINT FOREIGN KEY (meal_name_id) REFERENCES meal_names (meal_id)
+)
 /*
 ==============================================
 HERE BEGINS THE INSERTION QUERY SECTION

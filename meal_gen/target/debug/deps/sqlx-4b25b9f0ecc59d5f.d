@@ -1,0 +1,11 @@
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/sqlx-4b25b9f0ecc59d5f.rmeta: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/any/mod.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/macros/mod.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/ty_match.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/lib.md /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/macros/test.md /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/any/install_drivers_note.md
+
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/sqlx-4b25b9f0ecc59d5f.d: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/any/mod.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/macros/mod.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/ty_match.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/lib.md /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/macros/test.md /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/any/install_drivers_note.md
+
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/lib.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/any/mod.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/macros/mod.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/ty_match.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/lib.md:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/macros/test.md:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlx-0.7.1/src/any/install_drivers_note.md:

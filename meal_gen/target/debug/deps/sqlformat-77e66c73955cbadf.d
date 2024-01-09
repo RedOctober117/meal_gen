@@ -1,0 +1,10 @@
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/sqlformat-77e66c73955cbadf.rmeta: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/formatter.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/indentation.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/inline_block.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/params.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/tokenizer.rs
+
+/home/telemakos/projects/000/sql/meal_gen/meal_gen/target/debug/deps/sqlformat-77e66c73955cbadf.d: /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/lib.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/formatter.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/indentation.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/inline_block.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/params.rs /home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/tokenizer.rs
+
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/lib.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/formatter.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/indentation.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/inline_block.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/params.rs:
+/home/telemakos/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sqlformat-0.2.2/src/tokenizer.rs:
